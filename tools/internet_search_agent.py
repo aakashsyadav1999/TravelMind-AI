@@ -27,11 +27,10 @@ def search(query):
                 "content": query
             }
         ],
-        "max_tokens": 500, # Limit the response length
+        "max_tokens": 2000, # Increased for comprehensive travel plans
         "temperature": 0.2, # Control the randomness of the output
         "top_p": 0.9, # Control the diversity of the output
         "return_citations": True, # Include citations in the response
-        "search_domain_filter": ["perplexity.ai"], # Filter search results by domain
         "return_images": False, # Do not include images in the response
         "return_related_questions": False, # Do not include related questions in the response
         "search_recency_filter": "month" # Filter search results by recency
